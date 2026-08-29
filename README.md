@@ -53,3 +53,9 @@ Tracking, history and records work, with workout state persisted locally. The
 rep-detection thresholds are tuned by hand and haven't been validated against
 a ground-truth rep count, so treat the quality and fatigue classifications as
 a working prototype rather than a measurement.
+
+## Timeline
+
+Written 20 - 29 April 2026 (24 source files).
+
+Dates come from file modification times on disk, not from commit history - this repository was initialised later, so the commit dates are all from when it was published rather than when the code was written.
