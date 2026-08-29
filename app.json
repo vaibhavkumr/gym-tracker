@@ -1,0 +1,57 @@
+{
+  "expo": {
+    "name": "GymTrack",
+    "slug": "gymtrack-sensor",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#0A0A0A",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0A0A0A"
+    },
+    "scheme": "gymtrack",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.gymtrack.sensor",
+      "buildNumber": "1",
+      "infoPlist": {
+        "NSMotionUsageDescription": "GymTrack uses motion data to automatically detect your reps.",
+        "NSHealthShareUsageDescription": "GymTrack reads heart rate and calories from Apple Watch.",
+        "NSHealthUpdateUsageDescription": "GymTrack writes workout data to Apple Health.",
+        "NSBluetoothAlwaysUsageDescription": "GymTrack connects to the GymTrack Clip sensor via Bluetooth.",
+        "UIBackgroundModes": ["bluetooth-central", "fetch"]
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0A0A0A"
+      },
+      "package": "com.gymtrack.sensor",
+      "versionCode": 1,
+      "edgeToEdgeEnabled": true,
+      "permissions": [
+        "android.permission.ACTIVITY_RECOGNITION",
+        "android.permission.VIBRATE",
+        "android.permission.BLUETOOTH",
+        "android.permission.BLUETOOTH_CONNECT",
+        "android.permission.BLUETOOTH_SCAN"
+      ]
+    },
+    "web": {
+      "bundler": "metro",
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
